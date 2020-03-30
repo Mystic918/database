@@ -1,7 +1,7 @@
 const router = require('koa-router')()
 const services = require('./services.js') 
 //自动加上路由前准
-router.prefix('/public')
+router.prefix('/api/public')
 
 const multer =require('koa-multer')
 

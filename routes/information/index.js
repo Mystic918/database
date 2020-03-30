@@ -2,13 +2,13 @@ const router = require('koa-router')()
 // const services = require('./services.js')
 const personal = require('./personal.js')
 //自动加上路由前准
-router.prefix('/information')
+router.prefix('/api/information')
 const formidable =require('formidable')
 const multer =require('koa-multer')
 
 let storage = multer.diskStorage({
 	destination:function(req,file,cb){
-			cb(null,__dirname + '/../../public/uploads/images')
+			cb(null,__dirname + '/../../public/uploads/api/images')
 	},
 	filename:function(req,file,cb){
 		const fileFormat = (file.originalname).split(".")

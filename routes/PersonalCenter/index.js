@@ -1,7 +1,7 @@
 const router = require('koa-router')()
 const services = require('./services.js')
 //自动加上路由前准
-router.prefix('/PersonalCenter')
+router.prefix('/api/PersonalCenter')
 
 // router.get('/', async (ctx, next) => {
 //   await ctx.render('index', {
